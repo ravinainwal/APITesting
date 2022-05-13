@@ -1,555 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="findCoverageAPI" tests="5" skipped="0" failures="3" errors="0" timestamp="2022-05-12T09:20:04" hostname="LAPTOP-95OL2K9N" time="4.824">
+<testsuite name="findCoverageAPI" tests="56" skipped="0" failures="0" errors="0" timestamp="2022-05-13T14:14:47" hostname="LAPTOP-95OL2K9N" time="19.305">
   <properties/>
-  <testcase name="Test 1" classname="findCoverageAPI" time="3.426">
-    <failure message="org.opentest4j.AssertionFailedError: Test failed for Test Case ID 1&#10;&#10;Input &#10;&#10;product_code : NIVABUPA_REASSURE&#10;benefit_category : INPATIENT&#10;benefit_type : SERVICE&#10;benefit_code : SER_001&#10;&#10;Actual Output &#10;&#10;benefit_covered : true&#10;benefit_waiting_period : 30 days&#10;benefit_default_waiting_period_for_PEDs : 36 months&#10;&#10;&#10;Expected Output &#10;&#10;benefit_covered : False&#10;&#10;&#10;Difference between Expected Output and Actual Output &#10;&#10;benefit_covered is not matching ==&gt; Expected :False Actual :true&#10;&#10;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Test failed for Test Case ID 1
-
-Input 
-
-product_code : NIVABUPA_REASSURE
-benefit_category : INPATIENT
-benefit_type : SERVICE
-benefit_code : SER_001
-
-Actual Output 
-
-benefit_covered : true
-benefit_waiting_period : 30 days
-benefit_default_waiting_period_for_PEDs : 36 months
-
-
-Expected Output 
-
-benefit_covered : False
-
-
-Difference between Expected Output and Actual Output 
-
-benefit_covered is not matching ==&gt; Expected :False Actual :true
-
-
-	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
-	at app//org.junit.jupiter.api.Assertions.fail(Assertions.java:134)
-	at app//findCoverageAPI.testing(findCoverageAPI.java:277)
-	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@11.0.13/java.lang.reflect.Method.invoke(Method.java:566)
-	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
-	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestTemplateMethod(TimeoutExtension.java:92)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:226)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:204)
-	at app//org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:139)
-	at app//org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.lambda$execute$2(TestTemplateTestDescriptor.java:107)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base@11.0.13/java.util.stream.SliceOps$1$1.accept(SliceOps.java:199)
-	at java.base@11.0.13/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base@11.0.13/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:274)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:274)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:274)
-	at java.base@11.0.13/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
-	at app//org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:107)
-	at app//org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:42)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base@11.0.13/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base@11.0.13/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@11.0.13/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</failure>
-  </testcase>
-  <testcase name="Test 2" classname="findCoverageAPI" time="0.348"/>
-  <testcase name="Test 3" classname="findCoverageAPI" time="0.322"/>
-  <testcase name="Test 4" classname="findCoverageAPI" time="0.348">
-    <failure message="org.opentest4j.AssertionFailedError: Test failed for Test Case ID 4&#10;&#10;Input &#10;&#10;product_code : NIVABUPA_REASSURE&#10;benefit_category : INPATIENT&#10;benefit_type : PROCEDURE&#10;benefit_code : 090K0ZZ&#10;reason_for_hospitalization : ACCIDENT&#10;&#10;Actual Output &#10;&#10;benefit_covered : true&#10;benefit_waiting_period : 30 days&#10;benefit_default_waiting_period_for_PEDs : 36 months&#10;benefit_exclusion_exceptions : EXCL_001&#10;&#10;Expected Output &#10;&#10;benefit_covered : True&#10;benefit_waiting_period : 31 days&#10;benefit_default_waiting_period_for_PEDs : 37 months&#10;benefit_exclusion_exceptions : EXCL_002&#10;&#10;&#10;Difference between Expected Output and Actual Output &#10;&#10;benefit_exclusion_exceptions is not matching ==&gt; Expected :EXCL_002 Actual :EXCL_001&#10;benefit_default_waiting_period_for_PEDs is not matching ==&gt; Expected :37 months Actual :36 months&#10;&#10;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Test failed for Test Case ID 4
-
-Input 
-
-product_code : NIVABUPA_REASSURE
-benefit_category : INPATIENT
-benefit_type : PROCEDURE
-benefit_code : 090K0ZZ
-reason_for_hospitalization : ACCIDENT
-
-Actual Output 
-
-benefit_covered : true
-benefit_waiting_period : 30 days
-benefit_default_waiting_period_for_PEDs : 36 months
-benefit_exclusion_exceptions : EXCL_001
-
-Expected Output 
-
-benefit_covered : True
-benefit_waiting_period : 31 days
-benefit_default_waiting_period_for_PEDs : 37 months
-benefit_exclusion_exceptions : EXCL_002
-
-
-Difference between Expected Output and Actual Output 
-
-benefit_exclusion_exceptions is not matching ==&gt; Expected :EXCL_002 Actual :EXCL_001
-benefit_default_waiting_period_for_PEDs is not matching ==&gt; Expected :37 months Actual :36 months
-
-
-	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
-	at app//org.junit.jupiter.api.Assertions.fail(Assertions.java:134)
-	at app//findCoverageAPI.testing(findCoverageAPI.java:277)
-	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@11.0.13/java.lang.reflect.Method.invoke(Method.java:566)
-	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
-	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestTemplateMethod(TimeoutExtension.java:92)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:226)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:204)
-	at app//org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:139)
-	at app//org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.lambda$execute$2(TestTemplateTestDescriptor.java:107)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base@11.0.13/java.util.stream.SliceOps$1$1.accept(SliceOps.java:199)
-	at java.base@11.0.13/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base@11.0.13/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:274)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:274)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:274)
-	at java.base@11.0.13/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
-	at app//org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:107)
-	at app//org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:42)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base@11.0.13/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base@11.0.13/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@11.0.13/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</failure>
-  </testcase>
-  <testcase name="Test 5" classname="findCoverageAPI" time="0.364">
-    <failure message="org.opentest4j.AssertionFailedError: Test failed for Test Case ID 5&#10;&#10;Input &#10;&#10;product_code : NIVABUPA_REASSURE&#10;benefit_category : INPATIENT&#10;benefit_type : SERVICE&#10;benefit_code : SER_057&#10;policy_base_sum_insured : 1249999&#10;&#10;Actual Output &#10;&#10;benefit_covered : true&#10;limit_per_claim : 4800&#10;limit_per_day : 800&#10;benefit_waiting_period : 30 days&#10;benefit_default_waiting_period_for_PEDs : 36 months&#10;&#10;&#10;Expected Output &#10;&#10;benefit_covered : True&#10;benefit_waiting_period : 30 days&#10;benefit_default_waiting_period_for_PEDs : 36 months&#10;limit_per_claim : 3200&#10;limit_per_day : 900&#10;&#10;&#10;Difference between Expected Output and Actual Output &#10;&#10;limit_per_claim is not matching ==&gt; Expected :3200 Actual :4800&#10;limit_per_day is not matching ==&gt; Expected :900 Actual :800&#10;&#10;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Test failed for Test Case ID 5
-
-Input 
-
-product_code : NIVABUPA_REASSURE
-benefit_category : INPATIENT
-benefit_type : SERVICE
-benefit_code : SER_057
-policy_base_sum_insured : 1249999
-
-Actual Output 
-
-benefit_covered : true
-limit_per_claim : 4800
-limit_per_day : 800
-benefit_waiting_period : 30 days
-benefit_default_waiting_period_for_PEDs : 36 months
-
-
-Expected Output 
-
-benefit_covered : True
-benefit_waiting_period : 30 days
-benefit_default_waiting_period_for_PEDs : 36 months
-limit_per_claim : 3200
-limit_per_day : 900
-
-
-Difference between Expected Output and Actual Output 
-
-limit_per_claim is not matching ==&gt; Expected :3200 Actual :4800
-limit_per_day is not matching ==&gt; Expected :900 Actual :800
-
-
-	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
-	at app//org.junit.jupiter.api.Assertions.fail(Assertions.java:134)
-	at app//findCoverageAPI.testing(findCoverageAPI.java:277)
-	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@11.0.13/java.lang.reflect.Method.invoke(Method.java:566)
-	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
-	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestTemplateMethod(TimeoutExtension.java:92)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:226)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:204)
-	at app//org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:139)
-	at app//org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.lambda$execute$2(TestTemplateTestDescriptor.java:107)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base@11.0.13/java.util.stream.SliceOps$1$1.accept(SliceOps.java:199)
-	at java.base@11.0.13/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base@11.0.13/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:274)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:274)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base@11.0.13/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:274)
-	at java.base@11.0.13/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base@11.0.13/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base@11.0.13/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base@11.0.13/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
-	at app//org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:107)
-	at app//org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:42)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base@11.0.13/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base@11.0.13/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@11.0.13/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</failure>
-  </testcase>
+  <testcase name="Test 1" classname="findCoverageAPI" time="2.853"/>
+  <testcase name="Test 2" classname="findCoverageAPI" time="0.319"/>
+  <testcase name="Test 3" classname="findCoverageAPI" time="0.338"/>
+  <testcase name="Test 4" classname="findCoverageAPI" time="0.286"/>
+  <testcase name="Test 5" classname="findCoverageAPI" time="0.293"/>
+  <testcase name="Test 6" classname="findCoverageAPI" time="0.305"/>
+  <testcase name="Test 7" classname="findCoverageAPI" time="0.301"/>
+  <testcase name="Test 8" classname="findCoverageAPI" time="0.295"/>
+  <testcase name="Test 9" classname="findCoverageAPI" time="0.327"/>
+  <testcase name="Test 10" classname="findCoverageAPI" time="0.326"/>
+  <testcase name="Test 11" classname="findCoverageAPI" time="0.317"/>
+  <testcase name="Test 12" classname="findCoverageAPI" time="0.334"/>
+  <testcase name="Test 13" classname="findCoverageAPI" time="0.559"/>
+  <testcase name="Test 14" classname="findCoverageAPI" time="0.328"/>
+  <testcase name="Test 15" classname="findCoverageAPI" time="0.345"/>
+  <testcase name="Test 16" classname="findCoverageAPI" time="0.325"/>
+  <testcase name="Test 17" classname="findCoverageAPI" time="0.277"/>
+  <testcase name="Test 18" classname="findCoverageAPI" time="0.299"/>
+  <testcase name="Test 19" classname="findCoverageAPI" time="0.294"/>
+  <testcase name="Test 20" classname="findCoverageAPI" time="0.294"/>
+  <testcase name="Test 21" classname="findCoverageAPI" time="0.303"/>
+  <testcase name="Test 22" classname="findCoverageAPI" time="0.295"/>
+  <testcase name="Test 23" classname="findCoverageAPI" time="0.274"/>
+  <testcase name="Test 24" classname="findCoverageAPI" time="0.291"/>
+  <testcase name="Test 25" classname="findCoverageAPI" time="0.276"/>
+  <testcase name="Test 26" classname="findCoverageAPI" time="0.29"/>
+  <testcase name="Test 27" classname="findCoverageAPI" time="0.291"/>
+  <testcase name="Test 28" classname="findCoverageAPI" time="0.318"/>
+  <testcase name="Test 29" classname="findCoverageAPI" time="0.288"/>
+  <testcase name="Test 30" classname="findCoverageAPI" time="0.267"/>
+  <testcase name="Test 31" classname="findCoverageAPI" time="0.296"/>
+  <testcase name="Test 32" classname="findCoverageAPI" time="0.275"/>
+  <testcase name="Test 33" classname="findCoverageAPI" time="0.277"/>
+  <testcase name="Test 34" classname="findCoverageAPI" time="0.258"/>
+  <testcase name="Test 35" classname="findCoverageAPI" time="0.276"/>
+  <testcase name="Test 36" classname="findCoverageAPI" time="0.283"/>
+  <testcase name="Test 37" classname="findCoverageAPI" time="0.263"/>
+  <testcase name="Test 38" classname="findCoverageAPI" time="0.273"/>
+  <testcase name="Test 39" classname="findCoverageAPI" time="0.259"/>
+  <testcase name="Test 40" classname="findCoverageAPI" time="0.286"/>
+  <testcase name="Test 41" classname="findCoverageAPI" time="0.27"/>
+  <testcase name="Test 42" classname="findCoverageAPI" time="0.261"/>
+  <testcase name="Test 43" classname="findCoverageAPI" time="0.35"/>
+  <testcase name="Test 44" classname="findCoverageAPI" time="0.333"/>
+  <testcase name="Test 45" classname="findCoverageAPI" time="0.283"/>
+  <testcase name="Test 46" classname="findCoverageAPI" time="0.282"/>
+  <testcase name="Test 47" classname="findCoverageAPI" time="0.294"/>
+  <testcase name="Test 48" classname="findCoverageAPI" time="0.284"/>
+  <testcase name="Test 49" classname="findCoverageAPI" time="0.267"/>
+  <testcase name="Test 50" classname="findCoverageAPI" time="0.278"/>
+  <testcase name="Test 51" classname="findCoverageAPI" time="0.276"/>
+  <testcase name="Test 52" classname="findCoverageAPI" time="0.27"/>
+  <testcase name="Test 53" classname="findCoverageAPI" time="0.26"/>
+  <testcase name="Test 54" classname="findCoverageAPI" time="0.294"/>
+  <testcase name="Test 55" classname="findCoverageAPI" time="0.283"/>
+  <testcase name="Test 56" classname="findCoverageAPI" time="0.278"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
