@@ -1,0 +1,9 @@
+Test case Id,product_code,benefit_category,benefit_type,benefit_code,claim_submission_type,policy_sum_insured,reason_for_hospitalization,patient_days_of_hospitalization_during_policy_year,benefit_covered,benefit_exclusion_exceptions,benefit_waiting_period,benefit_default_waiting_period_for_PEDs,limit_per_claim,limit_per_day
+1,NIVABUPA_REASSURE,ALTERNATIVE,PROCEDURE,SG001,,,,,True ,,30 days,36 months,,
+2,NIVABUPA_REASSURE,ALTERNATIVE,PROCEDURE,SG002,,,,,True ,,30 days,36 months,,
+3,NIVABUPA_REASSURE,ALTERNATIVE,PROCEDURE,SG003,,,,,True ,,30 days,36 months,,
+4,NIVABUPA_REASSURE,ALTERNATIVE,PROCEDURE,SG004,,,,,True ,,30 days,36 months,,
+5,NIVABUPA_REASSURE,ALTERNATIVE,SERVICE,SER_005,,,,,True ,,30 days,36 months,,
+6,NIVABUPA_REASSURE,ALTERNATIVE,SERVICE,SER_006,,,,,True ,,30 days,36 months,,
+7,NIVABUPA_REASSURE,ALTERNATIVE,SERVICE,SER_086,,,,,True ,,30 days,36 months,,
+8,NIVABUPA_REASSURE,ALTERNATIVE,PROCEDURE,SG005,,,,,False ,,30 days,36 months,,

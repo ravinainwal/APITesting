@@ -1,0 +1,7 @@
+Test case Id,product_code,benefit_category,benefit_type,benefit_code,"personal_accident_cover_sum_insured
+",policy_enhancement_type,claim_submission_type,policy_base_sum_insured,reason_for_hospitalization,patient_days_of_hospitalization_during_policy_year,benefit_covered,benefit_exclusion_exceptions,benefit_waiting_period,benefit_default_waiting_period_for_PEDs,limit_per_claim,limit_per_day
+1,NIVABUPA_REASSURE,INPATIENT,SERVICE,SER_001,,,,,,,False  ,,30 days,36 months,,
+2,NIVABUPA_REASSURE,INPATIENT,SERVICE,SER_002,,,,,,,True ,,30 days,36 months,,
+3,NIVABUPA_REASSURE,INPATIENT,PRODUCT,PRO_002,,,,,,,True ,,30 days,36 months,,
+4,NIVABUPA_REASSURE,INPATIENT,PROCEDURE,090K0ZZ,,,,,ACCIDENT,,True ,EXCL_002,31 days,37 months,,
+5,NIVABUPA_REASSURE,INPATIENT,SERVICE,SER_057,,,,1249999,,,True ,,30 days,36 months,3200,900
