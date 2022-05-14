@@ -2,24 +2,26 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+
+    stage('Build') {
+    steps {
+                    bat './gradlew build'
+
+                }
+
+    }
+
+
+        stage('Test') {
             steps {
-                bat './gradlew build'
+                bat './gradlew test'
 
             }
 
             post {
-                    success {
-
-                      publishHTML target: [
-                          allowMissing: false,
-                          alwaysLinkToLastBuild: false,
-                          keepAll: true,
-                          reportDir: 'build',
-                          reportFiles: 'index.html',
-                          reportName: 'RCov Report'
-                        ]
-                    }
+                   always{
+                   junit '**/build/test-results/test/TEST-findCoverageAPI.xml'
+                   }
                   }
         }
 
