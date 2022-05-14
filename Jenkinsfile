@@ -9,7 +9,7 @@ pipeline {
             }
 
             post {
-                    success {
+
 
                       publishHTML target: [
                           allowMissing: false,
@@ -19,7 +19,7 @@ pipeline {
                           reportFiles: 'index.html',
                           reportName: 'RCov Report'
                         ]
-                    }
+
                   }
         }
 
