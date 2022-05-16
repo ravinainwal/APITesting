@@ -21,7 +21,7 @@ public class findCoverageAPI {
 
 
     @ParameterizedTest(name = "Test {index} ")
-    @CsvFileSource(resources = "/TestCases- ReAssure - Accident (1).csv", numLinesToSkip = 1)
+    @CsvFileSource(resources = "/test.csv", numLinesToSkip = 1)
     public void testing(String TestCaseId, String product_code, String benefit_category, String benefit_type, String benefit_code, String personal_accident_cover_sum_insured, String policy_enhancement_type, String claim_submission_type, String policy_base_sum_insured, String reason_for_hospitalization, String patient_days_of_hospitalization_during_policy_year, String benefit_covered, String benefit_exclusion_exceptions, String benefit_waiting_period, String benefit_default_waiting_period_for_PEDs, String limit_per_claim, String limit_per_day) throws ParseException {
 
         StringBuffer APIRequest = new StringBuffer();
