@@ -11,14 +11,14 @@ pipeline {
 
             post {
                     always {
-                      // publish html
+
                       publishHTML target: [
                           allowMissing: false,
                           alwaysLinkToLastBuild: false,
                           keepAll: true,
-                          reportDir: 'coverage',
+                          reportDir: 'C:\Users\ravin\IdeaProjects\APITesting\build\reports\tests\test',
                           reportFiles: 'index.html',
-                          reportName: 'RCov Report'
+                          reportName: 'HTML Report'
                         ]
                     }
                   }
